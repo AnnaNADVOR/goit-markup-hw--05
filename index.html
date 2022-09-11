@@ -57,7 +57,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button primary" type="button">Замовити послугу</button>
+          <button class="button primary" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!--features-->
@@ -116,13 +116,28 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list specialty-list">
             <li class="item">
-              <img src="images/work1.jpg" alt="Бекенд розробка" width="370" height="290" />
+              <div class="specialty-card">
+                <img src="images/work1.jpg" alt="Десктопні додатки" width="370" height="290" />
+                <div class="specialty-label">
+                  <h3 class="specialty-tittle">Десктопні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img src="images/work2.jpg" alt="Фронтенд розробка" width="370" height="290" />
+              <div class="specialty-card">
+                <img src="images/work2.jpg" alt="Мобільні додатки" width="370" height="290" />
+                <div class="specialty-label">
+                  <h3 class="specialty-tittle">Мобільні додатки</h3>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img src="images/work3.jpg" alt="Дизайн" width="370" height="290" />
+              <div class="specialty-card">
+                <img src="images/work3.jpg" alt="Дизайн" width="370" height="290" />
+                <div class="specialty-label">
+                  <h3 class="specialty-tittle">Дизайнерські рішення</h3>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -522,5 +537,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-svg"><use href="./images/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
